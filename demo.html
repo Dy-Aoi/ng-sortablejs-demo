@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta property="og:image" content="/st/og-image.png" />
+
+	<title>Sortable demo</title>
+	<link href="demo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div ng-app="demoApp" ng-controller="demoCtrl">
+		<ul class="demoUl" ng-sortable="barConfig">
+			<li ng-repeat="item in checkedList" data-item="{{item}}">
+				<span>{{item.name}}</span>
+				<span class="removeItem">X</span>
+			</li>
+		</ul>
+
+		<ul class="uncheckedList">
+			<li ng-repeat="item in uncheckedList">
+				<span ng-click="addToList(item)">＋</span>
+				<span>{{item.name}}</span>
+			</li>
+		</ul>
+	</div>
+
+	<script src="Sortable.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.2/angular.min.js"></script>
+	<script src="ng-sortable.js"></script>
+	<script src="demo.js"></script>
+</body>
+
+</html>

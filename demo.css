@@ -1,0 +1,47 @@
+body ul,li {
+    list-style-type:none !important;
+}
+
+ul {
+    width: 80%;
+    height: 200px;
+    margin: 40px 10%;
+}
+ul > li {
+    width: 20%;
+    height: 50px;
+    padding-left: 30px;
+    line-height: 50px;
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    background: #18a1e0;
+    border: 1px solid #fff;
+}
+
+.demoUl span:last-of-type {
+    display: inline-block;
+    float: right;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.demoUl span:last-of-type:hover {
+    color: #fff;
+}
+.uncheckedList li {
+    background: rgb(6, 243, 204);
+}
+
+.uncheckedList li span:first-of-type {
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+}
+
+.uncheckedList li span:last-of-type {
+    display: inline-block;
+    float: right;
+    padding-right: 30px;
+    cursor: pointer;
+}
